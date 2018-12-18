@@ -1,0 +1,2464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ресторан</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Spectral:700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div class="page-bg" id="pageBg"></div>
+	<div class="page-wrap" id="pageWrap">
+		<header class="page-header" id="header">
+			<div class="page-header__burger" id="openHeaderMenu"><div class="burger js-burger"><span class="burger__line"></span></div></div>
+			<nav class="page-header__nav header-nav">
+				<div class="header-nav__logo">
+					<a href="#"><img src="images/logo.svg" alt="Logo"></a>
+				</div>
+				<ul class="header-nav__list" id="headerMenu">
+					<li class="header-nav__item  js-header-nav-item"><a href="#" class="header-nav__link">Ресторан</a></li>
+					<li class="header-nav__item  js-header-nav-item"><a href="#" class="header-nav__link">Доставка</a></li>
+					<li class="header-nav__item  js-header-nav-item"><a href="#" class="header-nav__link">Караоке</a></li>
+					<li class="header-nav__item  header-nav__item--logo"><a href="#" class="header-nav__link"><img src="images/logo.svg" alt="Logo"></a></li>
+					<li class="header-nav__item  js-header-nav-item"><a href="#" class="header-nav__link">О нас</a></li>
+					<li class="header-nav__item  js-header-nav-item"><a href="#" class="header-nav__link">Новости</a></li>
+					<li class="header-nav__item  js-header-nav-item"><a href="#" class="header-nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="page-header__auth">
+				<a href="#" class="auth-link"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none"><path d="M7.5 14c-1.916 0-3.83.001-5.747 0C1.17 14 1 13.835 1 13.266c0-1.097.53-1.904 1.528-2.35.605-.27 1.288-.378 1.937-.555.153-.042.315-.055.466-.102.862-.27.846-.168.605-1.077-.135-.51-.516-.98-.862-1.41-.395-.493-.703-1-.777-1.628-.01-.077-.045-.17-.014-.23.383-.724.07-1.5.185-2.25.09-.59.288-1.09.7-1.527.096-.1.162-.258.177-.396.044-.423.25-.68.688-.713 1.358-.102 2.675.05 3.926.624.777.356 1.222.947 1.34 1.757.064.432.03.876.062 1.313a8.58 8.58 0 0 0 .123.935c.126.688-.12 1.275-.513 1.817-.168.232-.376.437-.564.654a2.71 2.71 0 0 0-.645 1.519c-.027.243.032.4.288.472l1.313.31c.846.163 1.647.406 2.288 1.008.625.588.824 1.31.725 2.126-.04.336-.283.436-.598.435h-2.874c-.998 0-1.996 0-2.994 0zM5.503 1.612c.227.483-.058.7-.306.966-.2.213-.414.483-.458.753-.088.544-.086 1.106-.077 1.66.005.304.136.605-.142.872-.06.058-.056.238-.01.328.214.423.392.88.694 1.24.583.69 1.03 1.41 1.032 2.334.002.52-.083.706-.6.87a14.6 14.6 0 0 1-1.579.386c-.66.13-1.294.31-1.8.766-.482.433-.73.96-.64 1.618.093.018.144.036.195.036l11.293.008c.258 0 .368-.138.306-.332-.124-.386-.233-.808-.476-1.12-.482-.62-1.23-.815-1.982-.973l-1.69-.43c-.34-.1-.48-.347-.488-.71-.02-.94.357-1.71.995-2.38.37-.387.67-.807.74-1.345.016-.12-.025-.247-.046-.37-.04-.233-.1-.464-.12-.698l-.037-1.583a1.53 1.53 0 0 0-.881-1.26c-.718-.366-1.484-.567-2.284-.624-.52-.037-1.044-.007-1.637-.007z" fill-rule="evenodd" fill="#575757" stroke="#575757" stroke-width=".6"/></svg></span><span class="auth-link__name">Константин</span></a>
+			</div>
+		</header>
+		<div class="page">
+			<main class="page-main page__main">
+				<header class="page-main__header main-header" id="contentHeader" data-desktop-bg="images/header-bg.jpg"  data-mobile-bg="images/header-bg-mobile.jpg">
+					<div class="main-header__content">
+						<div class="main-header__info">
+							<h1>Ресторан <a href="#" class="main-header__arrow-link"><span class="icon"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.5 9C30.5 8.17157 29.8284 7.5 29 7.5L15.5 7.5C14.6716 7.5 14 8.17157 14 9C14 9.82843 14.6716 10.5 15.5 10.5H27.5V22.5C27.5 23.3284 28.1716 24 29 24C29.8284 24 30.5 23.3284 30.5 22.5L30.5 9ZM9.06066 31.0607L30.0607 10.0607L27.9393 7.93934L6.93934 28.9393L9.06066 31.0607Z" fill="white"/></svg></span></a></h1>
+							<ul class="list">
+								<li class="list-item">
+									<div class="list-item__header">Кухня</div>
+									<div class="list-item__content">Восточная</div>
+								</li>
+								<li class="list-item">
+									<div class="list-item__header">Заказ</div>
+									<div class="list-item__content">От&nbsp;1000&nbsp;₽</div>
+								</li>
+								<li class="list-item">
+									<div class="list-item__header">Доставка</div>
+									<div class="list-item__content">с 11:00 до 02:00</div>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="main-header__link">о ресторане</a>
+					</div>
+				</header>
+				<nav class="page-main__nav  menu-nav">
+					<div class="menu-nav__btn" id="openNavBtn"><span class="icon"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.6001 9L9.6001 6L6.4001 6L6.4001 9L9.6001 9Z" fill="white"/><path d="M9.6001 15L9.6001 12L6.4001 12L6.4001 15L9.6001 15Z" fill="white"/><path d="M9.6001 3L9.6001 0L6.4001 -1.45687e-07L6.4001 3L9.6001 3Z" fill="white"/><path d="M3.19995 9L3.19995 6L-4.88758e-05 6L-4.90104e-05 9L3.19995 9Z" fill="white"/><path d="M16 9L16 6L12.8 6L12.8 9L16 9Z" fill="white"/><path d="M3.19995 15L3.19995 12L-4.88758e-05 12L-4.90104e-05 15L3.19995 15Z" fill="white"/><path d="M16 15L16 12L12.8 12L12.8 15L16 15Z" fill="white"/><path d="M3.19995 3L3.19995 0L-4.88758e-05 -1.45681e-07L-4.90104e-05 3L3.19995 3Z" fill="white"/><path d="M16 3L16 0L12.8 -1.39876e-07L12.8 3L16 3Z" fill="white"/></svg></span></div>
+					<div class="menu-nav__wrap" id="menuWrap">
+						<ul class="menu-nav__list" id="menuNav">
+							<li class="menu-nav__item"><a href="#popular" class="menu-nav__link  js-menu-link  is-active">Популярные <sup>12</sup></a></li>
+							<li class="menu-nav__item"><a href="#main" class="menu-nav__link  js-menu-link">Горячее <sup>74</sup></a></li>
+							<li class="menu-nav__item"><a href="#garnish" class="menu-nav__link  js-menu-link">Гарниры <sup>16</sup></a></li>
+							<li class="menu-nav__item"><a href="#baking" class="menu-nav__link  js-menu-link">Выпечка <sup>31</sup></a></li>
+							<li class="menu-nav__item"><a href="#grill" class="menu-nav__link  js-menu-link">Гриль <sup>8</sup></a></li>
+							<li class="menu-nav__item"><a href="#childrens" class="menu-nav__link  js-menu-link">Детское <sup>12</sup></a></li>
+							<li class="menu-nav__item"><a href="#snacks" class="menu-nav__link  js-menu-link">Закуски <sup>21</sup></a></li>
+							<li class="menu-nav__item"><a href="#soup" class="menu-nav__link  js-menu-link">Супы <sup>14</sup></a></li>
+
+							<li class="menu-nav__item"><a href="#baking1" class="menu-nav__link  js-menu-link">Выпечка <sup>31</sup></a></li>
+							<li class="menu-nav__item"><a href="#grill1" class="menu-nav__link  js-menu-link">Гриль <sup>8</sup></a></li>
+							<li class="menu-nav__item"><a href="#childrens1" class="menu-nav__link  js-menu-link">Детское <sup>12</sup></a></li>
+						</ul>
+						<div class="menu-nav__indicator-wrap" id="indicatorWrap">
+							<div class="menu-nav__indicator" id="indicator"></div>
+						</div>
+					</div>
+				</nav>
+				<div class="page-main__content  content">
+					<section class="content__item content-item" id="popular">
+						<header class="content-item__header">
+							<div class="h2">Популярные блюда <sup>12</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="main">
+						<header class="content-item__header">
+							<div class="h2">Горячее <sup>74</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="garnish">
+						<header class="content-item__header">
+							<div class="h2">Гарниры <sup>16</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="baking">
+						<header class="content-item__header">
+							<div class="h2">Выпечка <sup>31</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="grill">
+						<header class="content-item__header">
+							<div class="h2">Гриль <sup>8</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="childrens">
+						<header class="content-item__header">
+							<div class="h2">Детское <sup>12</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="snacks">
+						<header class="content-item__header">
+							<div class="h2">Закуски <sup>21</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="soup">
+						<header class="content-item__header">
+							<div class="h2">Супы <sup>14</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="baking1">
+						<header class="content-item__header">
+							<div class="h2">Выпечка <sup>31</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="grill1">
+						<header class="content-item__header">
+							<div class="h2">Гриль <sup>8</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__item content-item" id="childrens1">
+						<header class="content-item__header">
+							<div class="h2">Детское <sup>12</sup></div>
+							<div class="sorting">
+							</div>
+						</header>
+
+						<div class="flex-row  flex-row--4">
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+											<div class="count__item">2</div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/1.jpg" alt="Плов чайханский">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Плов чайханский <span>250 &nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/2.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>336&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/3.jpg" alt="Шашлык">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шашлык <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">656&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/4.jpg" alt="Судак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Судак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">226&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/5.jpg" alt="Манты">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Манты <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">326&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/6.jpg" alt="Шаверма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Шаверма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">146&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/7.jpg" alt="Бешбармак">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Бешбармак <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">446&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row__item">
+								<div class="card">
+									<div class="card__count">
+										<div class="count">
+											<a href="#" data-count="" class="count__item  count__item--minus minus disable js-count-item-minus"></a>
+											<div class="count__item"></div>
+											<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+										</div>
+									</div>
+									<a href="#" class="card__img js-open-modal">
+										<img src="images/menu/8.jpg" alt="Ковурма">
+									</a>
+									<div class="card__header">
+										<a href="#" class="card__title js-open-modal">
+											Ковурма <span>250&nbsp;г</span>
+										</a>
+										<div class="card__price">246&nbsp;₽</div>
+									</div>
+									<div class="card__hover-indicator js-card-hover-indicator"></div>
+									<div class="card__content">
+										<div class="card__text js-card-text">Камчатский краб, авокадо, свежие овощи и цитрусовый </div>
+										<a href="#" class="card__link js-open-modal">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<aside class="page-aside  page__aside">
+				<div class="page-aside__wrap">
+					<div class="h3">Мой заказ</div>
+					<div class="empty-order">
+						<img class="empty-order__img" src="images/empty-order.svg" alt="empty">
+						<div class="empty-order__text">Пока пусто ;)</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+	<div class="modal" id="modal" style="display: none;">
+		<div class="modal__wrap">
+			<div class="modal__content" id="modalContent">
+				<div class="modal__close  close" id="modalClose"></div>
+				<div class="modal__img"  id="modalImg">
+					<img src="images/menu/1.jpg" alt="">
+				</div>
+				<div class="modal__info">
+					<div class="card">
+						<div class="card__header">
+							<div class="card__title h3" id="modalTitle">
+								Стейк из говядины <span>250&nbsp;г</span>
+							</div>
+						</div>
+						<div class="card__content js-card-content">
+							<div class="card__subtitle">Описание</div>
+							<div class="card__text" id="modalDescription">Стейк из поясничной части мраморной говядины. Рекомендуемая степень прожарки medium</div>
+						</div>
+						<div class="card__content js-card-content">
+							<div class="card__subtitle">Состав</div>
+							<div class="card__text" id="modalIngredients">Микс салатов, лосось, соус терияки, соус Унаги</div>
+						</div>
+						<div class="card__content js-card-content">
+							<div class="card__subtitle">Пищевая ценность</div>
+							<div class="flex-row">
+								<div class="flex-row__item js-card-nums">
+									<div  class="card__nums" id="modalKkal">650</div>
+									<div class="card__nums-label">ккал</div>
+								</div>
+								<div class="flex-row__item js-card-nums">
+									<div  class="card__nums">34</div>
+									<div class="card__nums-label" id="modalProtein">белки</div>
+								</div>
+								<div class="flex-row__item js-card-nums">
+									<div  class="card__nums">60</div>
+									<div class="card__nums-label" id="modalFats">жиры</div>
+								</div>
+								<div class="flex-row__item js-card-nums">
+									<div  class="card__nums">12</div>
+									<div class="card__nums-label" id="modalCarbohydrates">углеводы</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="add-to-cart" id="modalAddToCart">
+						<div class="add-to-cart__count" id="modalCountWrap">
+							<div class="count" id="modalCount">
+								<a href="#" data-count="" class="count__item  count__item--plus plus is-active js-count-item-plus"></a>
+								<div class="count__item">2</div>
+								<a href="#" data-count="" class="count__item  count__item--minus minus js-count-item-minus"></a>
+							</div>
+						</div>
+						<div class="add-to-cart__price" id="modalPrice">246 ₽</div>
+						<a href="#" class="add-to-cart__link" id="modalLink">Добавить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+</html>
